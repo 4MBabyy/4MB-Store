@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-E8">
+	<meta name="viewport" content="width=device-width, initial-
+	scale=1.0">
+	<title>All Products - 4MB STORE </title>
+	<link rel="stylesheet" href="4mb stylesheet.css">
+	<link href="https://fonts.googleapis.com/css2?
+	family=Poppins:wght@300;400;500;600;700&display=swap"
+	rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-
+	awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+	<div class=container">
+		<div class="navbar">
+		<div class="logo">
+			<a href="index.html"><img src="4mbpics/quanz.PNG" width="125px"></a>
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="home">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="account.html">Account</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="4mbpics/cart.png" width="30px" height="30px"></a>
+		<img src="4mbpics/list.png" class="menu-icon"
+		onclick="menutoggle()">
+	</div>
+</div>
+
+<p>Report any issue to any of these:</p>
+<br>
+<ul>
+  <li><a href="#">Email- mickyy.forever@gmail.com</a></li>
+  <li>Email- mickyy.forever@protonmail.com</li>
+  <li>WhatsApp- 0207333553</li>
+  
+</ul>
+
+
+<!----------------footer----------------->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+
+				<h3>Download our App</h3>
+				<p>Download our App for Android and iOS mobile phone.</p>
+				<div class="app-logo">
+					<img src="4mbpics/as.png">
+					<img src="4mbpics/ps.png">
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<img src="4mbpics/quanz.PNG">
+				<p>Our purpose is to sustainably make the pleasure and benfits
+				or mobile phones accessible to many</p>
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog Post</li>
+					<li>Return Policy</li>
+					<li>Join affiliate</li>
+				</ul>
+						</div>
+			<div class="footer-col-4">
+				<h3>Follow us</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+					<li>Youtube</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="Copyright">Copyright 2021-MICKYY</p>
+	</div>
+</div>
+<!------------------js for toggle menu------------>
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+	if(MenuItems.style.maxHeight == "0px")
+	{
+		MenuItems.style.maxHeight = "200px";
+	}
+else
+	{
+		MenuItems.style.maxHeight = "0px"
+	}
+}
+</script>
+
+
+<!----------js for product gallery---------->
+
+<script>
+	var ProductImg = document.getElementById("ProductImg");
+
+	var SmallImg = document.getElementsByClassName("small-img");
+
+		SmallImg[0].onclick = function()
+		{
+			ProductImg.src = SmallImg[0].src;
+		}
+		SmallImg[1].onclick = function()
+		{
+			ProductImg.src = SmallImg[1].src;
+		}
+		SmallImg[2].onclick = function()
+		{
+			ProductImg.src = SmallImg[2].src;
+		}
+		SmallImg[3].onclick = function()
+		{
+			ProductImg.src = SmallImg[3].src;
+		}
+
+</script>
+
+
+
+</body>
+</html>
